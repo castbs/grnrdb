@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<a href="javascript:window.open('','_self').close();" class="btn">Return to Home Screen</a>
+
+<form action="/home/pi/Desktop/Latin_Language_Trivia_HTML_Page.html">
+    <input class=latin_button type="submit" value="Latin" />
+</form>
+
+
+
+<form action="/home/pi/Desktop/French_Language_Trivia_HTML_Page.html">
+    <input class=french_button type="submit" value="French" />
+</form>
+
+
+
+<form action="/home/pi/Desktop/Mandarin_Language_Trivia_HTML_Page.html">
+    <input class=mandarin_button type="submit" value="Mandarin" />
+</form>
+
+
+
+<form action="/home/pi/Desktop/Spanish_Language_Trivia_HTML_Page.html">
+    <input class=spanish_button type="submit" value="Spanish" />
+</form>
+
+
+<form action="/home/pi/Desktop/German_Language_Trivia_HTML_Page.html">
+    <input class=german_button type="submit" value="German" />
+</form>
+
+<form action="/home/pi/Desktop/Greek_Language_Trivia_HTML_Page.html">
+    <input class=greek_button type="submit" value="Greek" />
+</form>
+
+<style>
+
+ .btn {
+                background-color: red;
+                color: white;
+                
+                position:absolute;
+                transition: .5s ease;
+                top: 10px;
+                left: 10px;
+                
+                width: 200px;
+                height: 85px;
+                
+                font-family: Lato;
+                font-size: 2em;
+                
+                text-align: center;
+            }
+
+.latin_button {
+    
+     background-color: red;
+     color: white;
+     
+     position:absolute;
+     transition: .5s ease;
+     top: 30px;
+     left: 550px;
+    
+     width: 800px;
+     height: 85px;
+                
+     font-family: Lato;
+     font-size: 2em;
+                
+     text-align: center;
+    }
+
+
+.french_button {
+    
+     background-color: red;
+     color: white;
+     
+     position:absolute;
+     transition: .5s ease;
+     top: 160px;
+     left: 550px;
+    
+     width: 800px;
+     height: 85px;
+                
+     font-family: Lato;
+     font-size: 2em;
+                
+     text-align: center;
+    }
+
+
+
+.mandarin_button {
+     background-color: red;
+     color: white;
+     
+     position:absolute;
+     transition: .5s ease;
+     top: 290px;
+     left: 550px;
+    
+     width: 800px;
+     height: 85px;
+                
+     font-family: Lato;
+     font-size: 2em;
+                
+     text-align: center;
+    }
+
+
+.spanish_button {
+    background-color: red;
+     color: white;
+     
+     position:absolute;
+     transition: .5s ease;
+     top: 430px;
+     left: 550px;
+    
+     width: 800px;
+     height: 85px;
+                
+     font-family: Lato;
+     font-size: 2em;
+                
+     text-align: center;
+    }
+
+.german_button {
+    background-color: red;
+     color: white;
+     
+     position:absolute;
+     transition: .5s ease;
+     top: 570px;
+     left: 550px;
+    
+     width: 800px;
+     height: 85px;
+                
+     font-family: Lato;
+     font-size: 2em;
+                
+     text-align: center;
+    }
+
+.greek_button {
+    background-color: red;
+     color: white;
+     
+     position:absolute;
+     transition: .5s ease;
+     top: 710px;
+     left: 550px;
+    
+     width: 800px;
+     height: 85px;
+                
+     font-family: Lato;
+     font-size: 2em;
+                
+     text-align: center;
+    }
+
+
+</style>
+
+<script>
+
+(function(seconds) {
+    var slideshow,       
+        intvslideshow = function() {
+            clearInterval(slideshow);
+            slideshow = setTimeout(function() {
+               location.href = location.href;
+               window.open('/home/pi/Desktop/Slideshow.html', '_self');
+            }, seconds * 1000);
+        };
+
+    $(document).on('keypress click', function() { intvslideshow() });
+    intvslideshow();
+
+    $(document).on('keypress click', function() { intvslideshow() });
+    intvslideshow();
+
+}(5));
+
+</script>
+
+</html>
